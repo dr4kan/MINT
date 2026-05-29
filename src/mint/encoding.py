@@ -1,3 +1,10 @@
+# Copyright (c) 2026 Davide Pagano
+# University of Brescia (Italy)
+# davide.pagano@unibs.it
+#
+# Part of MINT — Muon Implicit Neural Tomography.
+# Distributed under the MIT License (see LICENSE in the project root).
+
 """Coordinate encodings for the neural field.
 
 This module provides two encoders that wrap a 3-D query coordinate

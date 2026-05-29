@@ -1,3 +1,10 @@
+# Copyright (c) 2026 Davide Pagano
+# University of Brescia (Italy)
+# davide.pagano@unibs.it
+#
+# Part of MINT — Muon Implicit Neural Tomography.
+# Distributed under the MIT License (see LICENSE in the project root).
+
 """Smoke tests: verify the package imports and that a tiny training run
 makes the loss go down.
 

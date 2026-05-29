@@ -1,3 +1,10 @@
+# Copyright (c) 2026 Davide Pagano
+# University of Brescia (Italy)
+# davide.pagano@unibs.it
+#
+# Part of MINT — Muon Implicit Neural Tomography.
+# Distributed under the MIT License (see LICENSE in the project root).
+
 """Loss components for the MINT optimisation problem.
 
 The 4x4 MCS covariance decomposes into two independent 2x2 blocks (one

@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 Davide Pagano
+# University of Brescia (Italy)
+# davide.pagano@unibs.it
+#
+# Part of MINT — Muon Implicit Neural Tomography.
+# Distributed under the MIT License (see LICENSE in the project root).
+
 """Command-line driver for training MINT on a saved muon dataset.
 
 The input dataset must be a PyTorch ``.pt`` file produced by

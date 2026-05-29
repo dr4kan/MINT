@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 Davide Pagano
+# University of Brescia (Italy)
+# davide.pagano@unibs.it
+#
+# Part of MINT — Muon Implicit Neural Tomography.
+# Distributed under the MIT License (see LICENSE in the project root).
+
 """Evaluate a trained MINT model on a regular 3-D grid.
 
 Reads a checkpoint produced by :command:`train_mint.py`, rebuilds the

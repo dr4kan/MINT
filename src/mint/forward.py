@@ -1,3 +1,10 @@
+# Copyright (c) 2026 Davide Pagano
+# University of Brescia (Italy)
+# davide.pagano@unibs.it
+#
+# Part of MINT — Muon Implicit Neural Tomography.
+# Distributed under the MIT License (see LICENSE in the project root).
+
 """Differentiable line integral of ``lambda`` along straight muon paths.
 
 For each track the path through the volume is approximated by the

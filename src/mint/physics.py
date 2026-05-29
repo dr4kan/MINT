@@ -1,3 +1,10 @@
+# Copyright (c) 2026 Davide Pagano
+# University of Brescia (Italy)
+# davide.pagano@unibs.it
+#
+# Part of MINT — Muon Implicit Neural Tomography.
+# Distributed under the MIT License (see LICENSE in the project root).
+
 """Multiple Coulomb Scattering (MCS) physics for MINT.
 
 We use the Highland / PDG approximation for the projected RMS scattering

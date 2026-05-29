@@ -1,3 +1,9 @@
+# MINT — Muon Implicit Neural Tomography
+# Copyright (c) 2026 Davide Pagano
+# University of Brescia (Italy)
+# davide.pagano@unibs.it
+# Distributed under the MIT License (see LICENSE).
+
 [build-system]
 requires = ["setuptools>=64", "wheel"]
 build-backend = "setuptools.build_meta"
