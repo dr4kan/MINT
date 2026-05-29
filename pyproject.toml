@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mint-muon"
+version = "0.1.0"
+description = "MINT — Muon Implicit Neural Tomography: differentiable neural-field reconstruction for cosmic-ray muon scattering tomography."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Davide Pagano", email = "davide.pagano@unibs.it" }
+]
+keywords = [
+    "muon tomography",
+    "multiple Coulomb scattering",
+    "neural radiance fields",
+    "differentiable rendering",
+    "inverse problems",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = [
+    "torch>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7",
+    "ruff>=0.4",
+]
+
+[project.urls]
+Paper = "https://doi.org/10.0000/placeholder"
+Source = "https://github.com/USERNAME/mint"
+Issues = "https://github.com/USERNAME/mint/issues"
+
+[project.scripts]
+mint-train = "scripts.train_mint:main"
+mint-eval  = "scripts.eval_mint:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["mint*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

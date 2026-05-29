@@ -1,0 +1,58 @@
+# Byte-compiled / optimised / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# PyTorch checkpoints / data
+*.pt
+*.pth
+*.ckpt
+*.npz
+
+# Jupyter / IDE
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tests / coverage
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.pytest_cache/
+.ruff_cache/
+
+# Outputs
+outputs/
+runs/
+logs/
