@@ -53,7 +53,7 @@ pure PyTorch — no C++/CUDA extension is required — and runs on CPU,
 NVIDIA GPU (CUDA) and Apple Silicon (MPS).
 
 ```bash
-git clone https://github.com/USERNAME/mint.git
+git clone https://github.com/dr4kan/mint.git
 cd mint
 pip install -e .
 ```
