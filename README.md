@@ -300,9 +300,6 @@ mint/
 ```
 
 The repository contains **only** the MINT reconstruction code.
-Simulation, baseline algorithms (PoCA, MLEM), and benchmark-specific
-analysis scripts used in the paper are kept in a separate research
-repository.
 
 ---
 
