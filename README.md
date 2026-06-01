@@ -2,7 +2,7 @@
 
 **Author**  Davide Pagano  
 **Affiliation**  University of Brescia (Italy)  
-**Contact**  [davide.pagano@unibs.it](mailto:davide.pagano@unibs.it) &nbsp;·&nbsp; ORCID [0000-0003-0333-448X](https://orcid.org/0000-0003-0333-448X)
+**Contact**  [davide.pagano@unibs.it](mailto:davide.pagano@unibs.it)
 
 ---
 
