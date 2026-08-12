@@ -1,11 +1,5 @@
 # MINT — Muon Implicit Neural Tomography
 
-**Author**  Davide Pagano  
-**Affiliation**  University of Brescia (Italy)  
-**Contact**  [davide.pagano@unibs.it](mailto:davide.pagano@unibs.it)
-
----
-
 A differentiable neural-field framework for cosmic-ray muon scattering
 tomography (MST).
 
@@ -37,14 +31,18 @@ sparse-track regime.
 
 ## Contents
 
-- [Installation](#installation)
-- [Quick start](#quick-start)
-- [Data format](#data-format)
-- [Library API](#library-api)
-- [Command-line tools](#command-line-tools)
-- [How MINT works (short)](#how-mint-works-short)
-- [Project layout](#project-layout)
-- [License](#license)
+- [MINT — Muon Implicit Neural Tomography](#mint--muon-implicit-neural-tomography)
+  - [Contents](#contents)
+  - [Installation](#installation)
+  - [Quick start](#quick-start)
+  - [Data format](#data-format)
+  - [Library API](#library-api)
+    - [Custom evaluation points](#custom-evaluation-points)
+  - [Command-line tools](#command-line-tools)
+    - [Recommended starting hyperparameters](#recommended-starting-hyperparameters)
+  - [How MINT works (short)](#how-mint-works-short)
+  - [Project layout](#project-layout)
+  - [License](#license)
 
 ---
 
