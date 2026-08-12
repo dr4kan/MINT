@@ -40,7 +40,7 @@ sparse-track regime.
     - [Custom evaluation points](#custom-evaluation-points)
   - [Command-line tools](#command-line-tools)
     - [Recommended starting hyperparameters](#recommended-starting-hyperparameters)
-  - [How MINT works (short)](#how-mint-works-short)
+  - [How MINT works](#how-mint-works)
   - [Project layout](#project-layout)
   - [License](#license)
 
@@ -232,45 +232,11 @@ for most large-volume muon-scattering geometries.
 
 ---
 
-## How MINT works (short)
+## How MINT works
 
-For a track with entry/exit points `(r_in, r_out)` and momentum `p`,
-the integrated inverse radiation length
-
-```
-T = ∫₀ᴸ λ_θ(r(s)) ds
-```
-
-is estimated by **stratified jittered Monte-Carlo quadrature** with
-`N` samples per track.  The Highland MCS formula gives the projected
-angular variance
-
-```
-θ₀² = (13.6 MeV / pβ)² · T
-```
-
-from which the full 4×4 covariance of the per-track observation
-`y = (dθ_x, dθ_y, dx, dy)` factorises into two independent 2×2 blocks.
-This admits a closed-form Gaussian NLL with no matrix decomposition.
-
-The training objective is
-
-```
-J(θ) = NLL(θ) + α · R_TV(θ) + β · R_bg(θ)
-```
-
-where `R_TV` is a stochastic total-variation regulariser (`α` defaults
-to `2 × 10⁻³`) and `R_bg` is a soft L2 prior toward `λ_air` (`β`
-defaults to `5 × 10⁻³`).  Both regularisers are evaluated on a few
-thousand random points per iteration.
-
-The encoder is the multi-resolution hash grid of Müller et al. 2022
-(Instant-NGP), and the decoder is a single-hidden-layer MLP of
-width 128; the final softplus enforces `λ > 0` smoothly.  The bias of
-the last linear layer is initialised so that `λ ≈ λ_air` everywhere
-at iteration 1, which keeps the per-track `T` away from zero and
-prevents the `1/T` Highland singularity from blowing up the first
-gradient.
+For a complete description of the MINT algorithm, its neural-field
+architecture, forward model, loss function, and training procedure,
+please refer to the [accompanying article](https://www.sciencedirect.com/science/article/pii/S0168900226006492?via%3Dihub).
 
 ---
 
