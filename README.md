@@ -28,8 +28,10 @@ sparse-track regime.
 > If you use this code in your research, please cite the accompanying
 > paper:
 >
-> D. Pagano, *A differentiable neural-field forward model for cosmic-ray
-> muon scattering tomography*, in preparation.
+> D. Pagano, [*A differentiable neural-field forward model for cosmic-ray
+> muon scattering tomography*](https://www.sciencedirect.com/science/article/pii/S0168900226006492?via%3Dihub),
+> *Nuclear Instruments and Methods in Physics Research Section A*, **1093**
+> (2027), 171923. https://doi.org/10.1016/j.nima.2026.171923
 
 ---
 
